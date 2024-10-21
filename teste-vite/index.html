@@ -1,13 +1,70 @@
+
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu App React com Vite</title>
-    <link rel="icon" href="/favicon.ico" />
-</head>
-<body>
-    <div id="app"></div>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Importação das fontes do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+
+    <title>Technology news</title>
+    
+    <style>
+      :root {
+        /* Cores */
+        --background-color: #F1F5F9;
+        --source-color: #008B8B;
+        --title-color: #1E293B;
+        --description-color: #475569;
+
+        /* Fontes */
+        --playfairDisplay: 'Playfair Display', serif;
+        --poppins: 'Poppins', sans-serif;
+        --robotoCondensed: 'Roboto Condensed', sans-serif;
+      }
+
+      .noscript {
+        text-align: center;
+      }
+
+      .noscript__title {
+        font-family: var(--playfairDisplay);
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0;
+      }
+
+      .noscript__subtitle {
+        font-family: var(--poppins);
+        font-size: 20px;
+        margin: 0;
+        color: var(--source-color);
+      }
+
+      .noscript__image {
+        max-width: 600px;
+        height: auto;
+        opacity: 0.7; 
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div class="noscript">
+        <img 
+          src="https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-rosto-pensante_114360-7944.jpg?t=st=1729479357~exp=1729482957~hmac=2d10f5609b470e72eca0639b99ba75789b9e13ac38f09b702ece0d7be5d55221&w=2000" 
+          alt="Habilite o JavaScript" 
+          class="noscript__image"
+        />
+        <h3 class="noscript__title">JavaScript está desabilitado...</h3>
+        <p class="noscript__subtitle">Habilite o JavaScript para visualizar o conteúdo desta página!</p>
+      </div>
+    </noscript>
+    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-</body>
+  </body>
 </html>
