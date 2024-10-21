@@ -97,7 +97,7 @@ Antes de começar, você precisará ter os seguintes itens instalados no seu sis
 2. **Navegue até o diretório do projeto**:
 
   ```bash
-  cd job-frontend-developer/
+  cd teste-vite/
   ```
 
 3. **Instale as dependências**:
