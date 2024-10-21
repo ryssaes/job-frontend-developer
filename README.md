@@ -1,54 +1,55 @@
-# Sistema Verdes Mares: Frontend Coding Test
+# 📰 **Descrição do Projeto**
+Este projeto é uma aplicação **React** que lista as notícias mais recentes, permitindo ao usuário navegar entre elas. A aplicação respeita vários [requisitos](#requisitos) e segue [esse protótipo](https://www.figma.com/design/r8ci3MkvQguiborxJanNuv/Frontend-Developer?node-id=16-97&t=6dBy6MaTFvVmUiNF-1)
 
-## Descrição do Projeto
-Este projeto é uma aplicação React que lista as notícias mais recentes, permitindo ao usuário navegar entre elas, ler detalhes e realizar buscas por autor e título. A aplicação respeita várias regras de negócio
+---
 
+## 🛠 **Tecnologias Utilizadas**
+- ⚛️ **React**: Biblioteca JavaScript para construir interfaces de usuário.
+- 🎨 **MUI (Material-UI)**: Biblioteca de componentes para React, utilizada para estilizar a aplicação.
+- 💻 **Bootstrap**: Framework CSS utilizado para garantir um design responsivo.
+- 🌐 **Axios**: Biblioteca para realizar requisições HTTP à API de notícias.
+- 🛣️ **React Router DOM**: Biblioteca para gerenciar as rotas da aplicação.
+- ⚡ **Vite**: Ferramenta de bundling rápida e eficiente para desenvolvimento de projetos modernos.
+- 🎨 **CSS Customizado**: Utilizado para garantir uma aparência visualmente consistente.
 
-## Tecnologias Utilizadas
-- **React**: Biblioteca JavaScript para construir interfaces de usuário.
-- **MUI (Material-UI)**: Biblioteca de componentes para React, utilizada para estilizar a aplicação.
-- **Bootstrap**: Framework CSS utilizado para garantir um design responsivo.
-- **Axios**: Biblioteca para realizar requisições HTTP para a API de notícias.
-- **React Router DOM**: Para gerenciar as rotas da aplicação.
-- **CSS Customizado**: Para garantir uma aparência visualmente consistente:
-  
-  > Exemplo CSS Customizado
+> **Exemplo de CSS Customizado**:
 
-  ```javascript
-  const styles = {
-    app: {
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-    app__header: {
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      width: '100%',
-    },
-    app__title: {
-      fontSize: '24px',
-      fontWeight: '800',
-      lineHeight: '24px',
-      letterSpacing: '2%',
-      fontFamily: 'var(--poppins)',
-      marginBottom: '32px',
-    },
-    app__text: {
-      textAlign: 'center',
-      color: 'var(--description-color)',
-      fontSize: '20px',
-      fontFamily: 'var(--robotoCondensed)', 
-      lineHeight: '27.5px',
-      marginBottom: '40px',
-    },
-  };
-  ```
+```javascript
+const styles = {
+  app: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  app__header: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    width: '100%',
+  },
+  app__title: {
+    fontSize: '24px',
+    fontWeight: '800',
+    lineHeight: '24px',
+    letterSpacing: '2%',
+    fontFamily: 'var(--poppins)',
+    marginBottom: '32px',
+  },
+  app__text: {
+    textAlign: 'center',
+    color: 'var(--description-color)',
+    fontSize: '20px',
+    fontFamily: 'var(--robotoCondensed)', 
+    lineHeight: '27.5px',
+    marginBottom: '40px',
+  },
+};
+```
+---
 
-## Requisitos
-### Requisitos Funcinais
+## ✅ **Requisitos**
+### 🔧 Requisitos Funcinais
 - [x] Deve ser possível listar as notícias mais recentes em ordem cronológica;
 - [x] Deve ser possível listar as notícias com `thumbnail`, `heading`, `description`, `author`, `image`, `category` e `source`;
 - [x] Deve ser possível acessar a notícia pelo `slug`;
@@ -57,7 +58,7 @@ Este projeto é uma aplicação React que lista as notícias mais recentes, perm
 - [x] Deve ser possível o usuário ler uma notícia;
 - [x] Deve ser possível salvar um `id` da notíca lida;
       
-### Regras de negócio
+### 📝 Regras de negócio
 - [x] O usuário não pode ler mais que 2 vezes a mesma notícia;
 - [x] O usuário não pode ler uma notícia com o JavaScript desabilitado;
 - [x] O usuário não pode ler uma notícia em modo anônimo;
@@ -65,7 +66,7 @@ Este projeto é uma aplicação React que lista as notícias mais recentes, perm
 - [x] O usuário não poderá acessar uma página de author;
 - [x] O usuário deverá ser redirecionado para página principal quando tentar acessar a página de categoria;
       
-### Requisitos não-funcionais
+### 🔒 Requisitos não-funcionais
 - [x] Dynamic Routes: o `slug` da notícida deve ser: `/[category]/[heading]-[id]`
 - [x] O `id` da notícia lida precisam estar persistidos em `localStorage`;
 - [x] O `id` da notícia persistida em `localStorage`, deve ser retornado quando passado o nome da chave `articles_read`;
@@ -75,8 +76,9 @@ Este projeto é uma aplicação React que lista as notícias mais recentes, perm
 - [x] O usuário em aba anônimo no Browser deverá ser direcionado para page-block;
 - [x] O usuário com mais de 10 leituras diferentes deverá ser direcionado para page-block;
 
+---
 
-## Instalação
+## 🚀 **Instalação**
 
 Antes de começar, você precisará ter os seguintes itens instalados no seu sistema:
 
@@ -109,6 +111,3 @@ Antes de começar, você precisará ter os seguintes itens instalados no seu sis
   ```bash
   yarn start
   ```
-
-
-   
