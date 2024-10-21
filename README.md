@@ -109,5 +109,5 @@ Antes de começar, você precisará ter os seguintes itens instalados no seu sis
 4. **Inicie o servidor de desenvolvimento**:
 
   ```bash
-  yarn start
+  yarn dev
   ```
