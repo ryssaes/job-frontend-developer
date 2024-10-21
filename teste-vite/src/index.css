@@ -1,0 +1,12 @@
+:root {
+  /* Cores */
+  --background-color: #F1F5F9;
+  --source-color: #008B8B;
+  --title-color: #1E293B;
+  --description-color: #475569;
+
+  /* Fontes */
+  --playfairDisplay: 'Playfair Display', serif;
+  --poppins: 'Poppins', sans-serif;
+  --robotoCondensed: 'Roboto Condensed', sans-serif;
+}
